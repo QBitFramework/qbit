@@ -317,7 +317,25 @@ sub from_json($) {
     my ($text) = @_;
 
     utf8::encode($text);
-    return JSON::XS->new->utf8->allow_nonref->decode($text);
+    my $result;
+    eval {
+        $result = JSON::XS->new->utf8->allow_nonref->decode($text);
+    };
+
+    if (!$@) {
+        return $result;
+    } else {
+        $text = '' if !defined $text;
+        throw gettext(
+            "Error in from_json().\n"
+            . "Error message:\n"
+            . "%s\n"
+            . "Input:\n"
+            . "'%s'\n",
+            $@,
+            $text,
+        );
+    }
 }
 
 =head2 format_number
