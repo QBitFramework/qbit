@@ -16,6 +16,6 @@ is(trdate(norm => sec => trdate(sec => norm => 1375808504)), 1375808504, 'Check 
 
 is(trdate(norm => days_in_month => [2012, 02, 15]), 29, 'Check trdate norm => days_in_month');
 
-is(check_date("2013-12-31\n", ifromat => 'db'), '', 'Check bad date with \n');
+is(check_date("2013-12-31\n", iformat => 'db'), '', 'Check bad date with \n');
 
-is(check_date("2013-12-31", ifromat => 'db'), '', 'Check date');
+is(check_date("2013-12-31", iformat => 'db'), 1, 'Check date');
