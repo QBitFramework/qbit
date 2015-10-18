@@ -1,4 +1,4 @@
-use Test::More tests => 10;
+use Test::More tests => 15;
 
 use qbit;
 
@@ -19,3 +19,13 @@ is(trdate(norm => days_in_month => [2012, 02, 15]), 29, 'Check trdate norm => da
 is(check_date("2013-12-31\n", iformat => 'db'), '', 'Check bad date with \n');
 
 is(check_date("2013-12-31", iformat => 'db'), 1, 'Check date');
+
+is(compare_dates('1980-01-01', '1984-07-04', iformat1 => 'db', iformat2 => 'db'), -1, 'compare_dates()',);
+
+is(compare_dates('2000-01-01', '2010-01-01', iformat1 => 'db', iformat2 => 'db'), -1, 'compare_dates()',);
+
+is(compare_dates('1900-01-01', '1984-07-04', iformat1 => 'db', iformat2 => 'db'), -1, 'compare_dates()',);
+
+is(compare_dates('2010-01-01', '2010-01-01', iformat1 => 'db', iformat2 => 'db'), 0, 'compare_dates()',);
+
+is(compare_dates('1999-01-01', '1998-01-01', iformat1 => 'db', iformat2 => 'db'), 1, 'compare_dates()',);
