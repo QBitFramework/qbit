@@ -115,15 +115,27 @@ sub try(&;$) {
     my $cur_catch = $catch;
     my $find_catch = !defined($catch) || $catch->[0] eq '::FINALLY::';
 
+    my $first_exception = '';
     if ($@) {
         $@ = Exception::SysDie->new($@)
           unless ref($@) && $@->isa('Exception');
+
+        $first_exception = $@;
+
         while (defined($cur_catch)) {
             last if $cur_catch->[0] eq '::FINALLY::';
             if ($find_catch || $@->isa($cur_catch->[0])) {
                 $find_catch = 1;
                 if (ref($cur_catch->[1]) eq 'CODE') {
-                    $cur_catch->[1]($@);
+                    eval {$cur_catch->[1]($@)};
+
+                    if ($@) {
+                        $find_catch = 0;
+
+                        $@ = Exception::SysDie->new($@)
+                          unless ref($@) && $@->isa('Exception');
+                    }
+
                     last;
                 } else {
                     $cur_catch = $cur_catch->[1];
@@ -139,7 +151,8 @@ sub try(&;$) {
 
     die("Expected semicolon after catch block (" . join(", ", (caller())[1, 2]) . ")\n")
       if defined($cur_catch) && ref($cur_catch) ne 'ARRAY';
-    $cur_catch->[1]() if defined($cur_catch);
+
+    $cur_catch->[1]($first_exception) if defined($cur_catch);
 
     die $@ if $@ && !$find_catch;
 }
