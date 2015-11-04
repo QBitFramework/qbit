@@ -1,3 +1,17 @@
+libqbit-perl (1.5) raring; urgency=low
+
+  * fix trdate
+
+  * fix finally block
+
+  * fix regexp
+
+  * fix error with \n
+
+  * fix regexp for check_date
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Wed, 04 Nov 2015 20:11:32 +0300
+
 libqbit-perl (1.4) raring; urgency=low
 
   * deleted old code
