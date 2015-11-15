@@ -127,7 +127,7 @@ sub try(&;$) {
             if ($find_catch || $@->isa($cur_catch->[0])) {
                 $find_catch = 1;
                 if (ref($cur_catch->[1]) eq 'CODE') {
-                    eval {$cur_catch->[1]($@)};
+                    eval {$cur_catch->[1]($first_exception)};
 
                     if ($@) {
                         $find_catch = 0;
