@@ -8,7 +8,7 @@ package main;
 
 use qbit;
 
-use Test::More tests => 20;
+use Test::More tests => 23;
 
 sub t1 {
     my $res = '';
@@ -345,3 +345,57 @@ sub t20 {
 
 ok(t20() eq 'start+catch_Test+Exception::Test+Exception::Test_2',
     'In catch and finally blocks you can access first $@');
+
+sub t21 {
+    my $result = '';
+    try {
+        throw 'Error';
+    }
+    catch Exception::Test with {
+        $result .= '+catch_Test';
+    }
+    catch {
+        $result .= $_[0]->message;
+    };
+
+    return $result;
+}
+
+ok(t21() eq 'Error', 'Error message right');
+
+sub t22 {
+    my $result = '';
+    try {
+        throw Exception::Test 'Error';
+    }
+    catch Exception::Test with {
+        $result .= $_[0]->message;
+    }
+    catch {
+        $result .= '+catch';
+    };
+
+    return $result;
+}
+
+ok(t22() eq 'Error', 'Error message right');
+
+sub t23 {
+    my $result = '';
+    try {
+        throw 'Error';
+    }
+    catch Exception::Test with {
+        $result .= '+catch_Test';
+    }
+    catch {
+        $result .= $_[0]->message;
+    }
+    finally {
+        $result .= '+finally';
+    };
+
+    return $result;
+}
+
+ok(t23() eq 'Error+finally', 'Error message right');
