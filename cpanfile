@@ -5,7 +5,7 @@ requires 'JSON::XS';
 requires 'Locale::Messages';
 requires 'Net::LibIDN';
 requires 'Scalar::Util';
-requires 'Time::Local';
+#requires 'Time::Local';
 requires 'URI::Escape';
 
 on test => sub {
