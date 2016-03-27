@@ -3,6 +3,34 @@ Changes from 2015-03-28 00:00:00 +0000 to present.
 ==================================================
 
 ----------------------------------------
+version 2.2 at 2016-03-27 17:58:38 +0000
+----------------------------------------
+
+  Change: ec48805fd977cbbcf9e0b1d9b77c56f71da861c3
+  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
+  Date : 2016-03-27 21:53:13 +0000
+
+    Merge pull request #22 from Madskill/delete_old_version
+
+    delete 5.8 from travis config 
+
+  Change: e33f2e88ec399f3db63935376767ddb32034595b
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-03-27 20:48:38 +0000
+
+    delete 5.8 from travis config 
+
+----------------------------------------
+version 2.1 at 2016-03-27 16:54:02 +0000
+----------------------------------------
+
+  Change: 86d5124faaf16e8ce9424e307a13f48ff5be191f
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-03-27 19:54:02 +0000
+
+    Version 2.1 
+
+----------------------------------------
 version 2.0 at 2016-03-27 16:40:39 +0000
 ----------------------------------------
 

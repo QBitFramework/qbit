@@ -1,3 +1,15 @@
+libqbit-perl (2.2) raring; urgency=low
+
+  * delete 5.8 from travis config
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sun, 27 Mar 2016 20:58:39 +0300
+
+libqbit-perl (2.1) raring; urgency=low
+
+  * Version 2.1
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sun, 27 Mar 2016 19:54:02 +0300
+
 libqbit-perl (2.0) raring; urgency=low
 
   * return Time::Local in require
