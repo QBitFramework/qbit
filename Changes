@@ -3,8 +3,32 @@ Changes from 2015-03-28 00:00:00 +0000 to present.
 ==================================================
 
 ----------------------------------------
-version 1.9 at 2016-03-27 13:35:54 +0000
+version 2.0 at 2016-03-27 16:40:28 +0000
 ----------------------------------------
+
+  Change: 4c538683265167b943be5568d0e34c4e7379cf5d
+  Author: Igor <igor-sverdlov@mail.ru>
+  Date : 2016-03-27 20:27:00 +0000
+
+    Merge pull request #21 from Madskill/return_time_local
+
+    return Time::Local in require 
+
+  Change: d12153888674925fd8065c75498c49c5b6ca269b
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-03-27 19:25:33 +0000
+
+    return Time::Local in require 
+
+----------------------------------------
+version 1.9 at 2016-03-27 13:36:18 +0000
+----------------------------------------
+
+  Change: e000d96d40809f94c44df2e4abe556a828e081bc
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-03-27 16:36:18 +0000
+
+    Version 1.9 
 
   Change: 94bcc68989b361d5ff4e29d584a7d8b9584737fe
   Author: Igor Sverdlov <igor-sverdlov@mail.ru>

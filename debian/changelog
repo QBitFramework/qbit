@@ -1,3 +1,9 @@
+libqbit-perl (2.0) raring; urgency=low
+
+  * return Time::Local in require
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sun, 27 Mar 2016 19:40:29 +0300
+
 libqbit-perl (1.9) raring; urgency=low
 
   * delete Time::Local
