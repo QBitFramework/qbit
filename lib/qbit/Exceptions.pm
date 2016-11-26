@@ -176,6 +176,16 @@ sub throw($) {
     die $exception;
 }
 
+sub die_handler {
+    die @_ unless defined($^S);    # Perl parser errors
+
+    my ($exception) = @_;
+
+    $exception = Exception::SysDie->new($exception) unless ref($exception);
+
+    die $exception;
+}
+
 package Exception;
 
 use strict;
