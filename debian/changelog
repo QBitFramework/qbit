@@ -1,3 +1,9 @@
+libqbit-perl (2.3) raring; urgency=low
+
+  * added die_handler
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Thu, 01 Dec 2016 21:30:37 +0300
+
 libqbit-perl (2.2) raring; urgency=low
 
   * delete 5.8 from travis config

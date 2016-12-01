@@ -1,10 +1,34 @@
 ==================================================
-Changes from 2015-03-28 00:00:00 +0000 to present.
+Changes from 2015-12-02 00:00:00 +0000 to present.
 ==================================================
 
 ----------------------------------------
-version 2.2 at 2016-03-27 17:58:38 +0000
+version 2.3 at 2016-12-01 18:30:36 +0000
 ----------------------------------------
+
+  Change: 1092d69139aa76fa9be089e3e6b3723841ed5b70
+  Author: Igor <igor-sverdlov@mail.ru>
+  Date : 2016-12-01 21:29:50 +0000
+
+    Merge pull request #23 from Madskill/die_handler
+
+    added die_handler 
+
+  Change: 161e89ba8bdd591b03b2d30b4fe7e039d49590dd
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-11-26 20:38:09 +0000
+
+    added die_handler 
+
+----------------------------------------
+version 2.2 at 2016-03-27 17:58:52 +0000
+----------------------------------------
+
+  Change: 5d778da0f1ad83ef3567b68f695a8cbe0d740493
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-03-27 20:58:52 +0000
+
+    Version 2.2 
 
   Change: ec48805fd977cbbcf9e0b1d9b77c56f71da861c3
   Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
@@ -118,126 +142,6 @@ version 1.8 at 2016-03-13 20:09:30 +0000
 
     Version 1.8 
 
-----------------------------------------
-version 1.7 at 2015-11-18 18:21:38 +0000
-----------------------------------------
-
-  Change: e45aeb3a60aa807eb90d2577c13591ecba5f809a
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2015-11-18 21:21:38 +0000
-
-    Version 1.6 
-
-  Change: e219615b8a60f6e27f38add4a7970c9833d7b11f
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2015-11-18 08:42:06 +0000
-
-    Merge pull request #19 from Madskill/fix_catch
-
-    fix catch 
-
-  Change: bb60bcdee3679f2fbc1b4868d300f81160b64908
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2015-11-16 00:02:09 +0000
-
-    fix catch 
-
-----------------------------------------
-version 1.5 at 2015-11-04 17:11:43 +0000
-----------------------------------------
-
-  Change: e5ab1d3e48a04fd8f4d860823c8409ba4e6800eb
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2015-11-04 20:11:43 +0000
-
-    Version 1.5 
-
-  Change: a0895fdf0a85be53bfb42866a4b766f5cbd12fdd
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2015-10-18 22:18:45 +0000
-
-    Merge pull request #18 from Madskill/fix_trdate
-
-    fix trdate 
-
-  Change: 2b0384cc687c43d0a5e356cd3fc2ebbce87d49a9
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2015-10-18 22:18:10 +0000
-
-    Merge pull request #17 from Madskill/fix_exception
-
-    fix finally block 
-
-  Change: 998a062563afe90b518ff00d132902f34df6fa3e
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2015-10-18 21:05:14 +0000
-
-    fix trdate 
-
-  Change: 3da2da3d6cac728fd5499c381f3adda3782c6187
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2015-10-18 20:08:46 +0000
-
-    fix finally block 
-
-  Change: 65627500821ffbb3d1aeb3b89812b582f790fbbd
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2015-05-22 13:49:47 +0000
-
-    Merge pull request #16 from Madskill/fix_check_date
-
-    Fix check date 
-
-  Change: df3330eb3539661f8423b1c439d9e2fcfa2b8602
-  Author: Igor Sverdlov <blizzard@yandex-team.ru>
-  Date : 2015-05-21 18:29:28 +0000
-
-    fix regexp 
-
-  Change: 9f2713137e6b8c6900473ff5e5e6eb8cf9248664
-  Author: Igor Sverdlov <blizzard@yandex-team.ru>
-  Date : 2015-05-21 18:12:24 +0000
-
-    fix error with \n 
-
-  Change: 9743c0dd215822b9879eed6e1f75244849a8d4b7
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2015-05-14 17:31:50 +0000
-
-    Merge pull request #15 from Madskill/fix_check_date
-
-    fix regexp for check_date 
-
-  Change: 63e5d3fd6948bd1a622dace40e4b629214b3434a
-  Author: Igor Sverdlov <blizzard@yandex-team.ru>
-  Date : 2015-05-14 17:03:53 +0000
-
-    fix regexp for check_date 
-
-----------------------------------------
-version 1.4 at 2015-03-30 11:21:08 +0000
-----------------------------------------
-
-  Change: 248c404289e6da401db0538e45b49f87fa35b79c
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2015-03-30 14:21:08 +0000
-
-    Version 1.4 
-
-  Change: 430ab418adf0f2e8601900e6620a1420e13eee54
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2015-03-30 14:20:20 +0000
-
-    Merge pull request #14 from Madskill/fix_new_method
-
-    deleted old code 
-
-  Change: 96de1034b9794bf839c9537196867e080149f805
-  Author: Igor Sverdlov <blizzard@yandex-team.ru>
-  Date : 2015-03-27 12:18:10 +0000
-
-    deleted old code 
-
 =================================================
-Plus 13 releases after 2015-03-28 00:00:00 +0000.
+Plus 17 releases after 2015-12-02 00:00:00 +0000.
 =================================================
