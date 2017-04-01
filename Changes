@@ -1,10 +1,34 @@
 ==================================================
-Changes from 2015-12-02 00:00:00 +0000 to present.
+Changes from 2016-04-01 00:00:00 +0000 to present.
 ==================================================
 
 ----------------------------------------
-version 2.3 at 2016-12-01 18:30:36 +0000
+version 2.4 at 2017-04-01 19:41:59 +0000
 ----------------------------------------
+
+  Change: d3be470e882790904662b26e7e4296c687351c7b
+  Author: Igor <igor-sverdlov@mail.ru>
+  Date : 2017-04-01 22:39:36 +0000
+
+    Merge pull request #24 from Madskill/fix_warnings
+
+    fix warnings 
+
+  Change: 9d5248e4413f81bed954f0afdb77e90309b2ef14
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2017-04-01 22:37:47 +0000
+
+    fix warnings 
+
+----------------------------------------
+version 2.3 at 2016-12-01 18:31:03 +0000
+----------------------------------------
+
+  Change: f6408a0f69ffdaf292e7aed992f54d25795d8bb2
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-12-01 21:31:03 +0000
+
+    Version 2.3 
 
   Change: 1092d69139aa76fa9be089e3e6b3723841ed5b70
   Author: Igor <igor-sverdlov@mail.ru>
@@ -20,128 +44,6 @@ version 2.3 at 2016-12-01 18:30:36 +0000
 
     added die_handler 
 
-----------------------------------------
-version 2.2 at 2016-03-27 17:58:52 +0000
-----------------------------------------
-
-  Change: 5d778da0f1ad83ef3567b68f695a8cbe0d740493
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 20:58:52 +0000
-
-    Version 2.2 
-
-  Change: ec48805fd977cbbcf9e0b1d9b77c56f71da861c3
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2016-03-27 21:53:13 +0000
-
-    Merge pull request #22 from Madskill/delete_old_version
-
-    delete 5.8 from travis config 
-
-  Change: e33f2e88ec399f3db63935376767ddb32034595b
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 20:48:38 +0000
-
-    delete 5.8 from travis config 
-
-----------------------------------------
-version 2.1 at 2016-03-27 16:54:02 +0000
-----------------------------------------
-
-  Change: 86d5124faaf16e8ce9424e307a13f48ff5be191f
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 19:54:02 +0000
-
-    Version 2.1 
-
-----------------------------------------
-version 2.0 at 2016-03-27 16:40:39 +0000
-----------------------------------------
-
-  Change: 799c3d5047e1f44c70a378704d5e88d488c2da0c
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 19:40:39 +0000
-
-    Version 2.0 
-
-  Change: 4c538683265167b943be5568d0e34c4e7379cf5d
-  Author: Igor <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 20:27:00 +0000
-
-    Merge pull request #21 from Madskill/return_time_local
-
-    return Time::Local in require 
-
-  Change: d12153888674925fd8065c75498c49c5b6ca269b
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 19:25:33 +0000
-
-    return Time::Local in require 
-
-----------------------------------------
-version 1.9 at 2016-03-27 13:36:18 +0000
-----------------------------------------
-
-  Change: e000d96d40809f94c44df2e4abe556a828e081bc
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 16:36:18 +0000
-
-    Version 1.9 
-
-  Change: 94bcc68989b361d5ff4e29d584a7d8b9584737fe
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-27 16:35:08 +0000
-
-    Merge branch 'master' of https://github.com/QBitFramework/qbit 
-
-  Change: 1584455357a26ee24e26d04117a7dac3dec9efe3
-  Author: Sergei Svistunov <sergei-svistunov@yandex.ru>
-  Date : 2016-03-26 13:24:13 +0000
-
-    Merge pull request #20 from Madskill/qbit_to_cpan
-
-    upload to cpan 
-
-  Change: 92a3c6d946eab43661412c2a127204ce6dd21594
-  Author: blizzard <blizzard@yandex-team.ru>
-  Date : 2016-03-14 22:42:52 +0000
-
-    delete Time::Local 
-
-  Change: 00ebb47a2b47558189e50f62a02d1649d4ffcffb
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-14 00:48:43 +0000
-
-    new cpanfile 
-
-  Change: 4d237bac360d9ed23d58d16a6d74cd5bfd6ec5cc
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-14 00:39:02 +0000
-
-    added .travis.yml 
-
-  Change: 874ad8d8306ffb19f41300be2de46b11f82c20b8
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-14 00:28:23 +0000
-
-    added end line 
-
-  Change: b63f3fd4edd203df87bb3fd958dab4cf1b2bda3c
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-14 00:26:35 +0000
-
-    upload to cpan 
-
-----------------------------------------
-version 1.8 at 2016-03-13 20:09:30 +0000
-----------------------------------------
-
-  Change: 184a11abfde6a2d6578fe46f2972d81ba7451b2a
-  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
-  Date : 2016-03-13 23:09:30 +0000
-
-    Version 1.8 
-
 =================================================
-Plus 17 releases after 2015-12-02 00:00:00 +0000.
+Plus 22 releases after 2016-04-01 00:00:00 +0000.
 =================================================
