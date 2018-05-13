@@ -120,7 +120,7 @@ B<append> - boolean
 
 =cut
 
-sub writefile {
+sub writefile($$;%) {
     my ($filename, $data, %opts) = @_;
 
     my $fh = local *FH;
