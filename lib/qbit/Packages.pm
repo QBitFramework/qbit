@@ -163,7 +163,7 @@ sub require_class {
         $result = require($file_name);
     }
     catch {
-        throw fix_utf($_[0]->message);
+        throw $_[0];
     };
 
     return $result || throw Exception gettext('Cannot requre class "%s": %s', $class, fix_utf($@ || $!));
