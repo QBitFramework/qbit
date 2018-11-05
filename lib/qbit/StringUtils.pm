@@ -320,18 +320,19 @@ sub from_json($) {
 
     my $original_text = $text;
 
-    utf8::encode($text);
+    utf8::encode($text) if defined($text);
+
     my $result;
     eval {$result = JSON::XS->new->utf8->allow_nonref->decode($text);};
 
     if (!$@) {
         return $result;
     } else {
-        $text = '' if !defined $text;
         my ($error) = ($@ =~ m'(.+) at /');
         $error ||= $@;
-        throw Exception::BadArguments::InvalidJSON gettext("Error in from_json: %s\n" . "Input:\n" . "'%s'\n", $error,
-            $original_text,);
+
+        throw Exception::BadArguments::InvalidJSON gettext("Error in from_json: %s\nInput:\n%s\n", $error,
+            $original_text // 'UNDEF');
     }
 }
 
