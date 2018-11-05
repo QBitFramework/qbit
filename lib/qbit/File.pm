@@ -67,7 +67,7 @@ sub readfile($;%) {
         throw Exception gettext('Cannot open file "%s": %s', $filename, fix_utf($!));
     }
 
-    $opts{'binary'} ? binmode $fh : binmode $fh, ':utf8';
+    binmode $fh;
 
     my $size_left = -s $filename;
 
@@ -84,6 +84,8 @@ sub readfile($;%) {
         $size_left -= $read_cnt;
         last if $size_left <= 0;
     }
+
+    utf8::decode($content) unless $opts{'binary'};
 
     return $content;
 }
